@@ -1,0 +1,36 @@
+.preguntas-frecuentes h1 {
+    font-size: 16px;
+    text-align: center;
+}
+
+.preguntas-frecuentes h2 {
+    font-size: 16px;
+}
+
+.info {
+  background-color: #f3f3f3;
+  margin: 30px;
+  font-size: 14px;
+  color: #000000;
+  padding: 10px;
+  height: auto;
+}
+
+.info h2 {
+  font-size: 13px;
+}
+
+.info h6 {
+  font-size: 12px;
+}
+.info p {
+  font-size: 13px;
+}
+@media (min-width: 990px) {
+    .infoGropu {
+
+      display: grid;
+      grid-template-columns: auto auto auto auto;
+    }
+
+  }

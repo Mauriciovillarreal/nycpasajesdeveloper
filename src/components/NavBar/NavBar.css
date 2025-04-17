@@ -1,0 +1,90 @@
+.NaVBar {
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1050;
+    background-color: white;
+}
+
+.navbar-toggler {
+    background-color: rgb(255, 255, 255) !important;
+    border: none !important;
+}
+
+.navbar-toggler:focus {
+    text-decoration: none;
+    outline: 0;
+    box-shadow: none !important;
+}
+
+.me-auto {
+    display: flex;
+    align-items: center;
+    /* Alinea verticalmente los elementos */
+}
+
+.me-auto a {
+    display: inline-block;
+    text-decoration: none;
+    font-size: 14px !important;
+    color: rgb(0, 0, 0);
+    padding: 5px 10px;
+    /* Ajusta el padding para centrar mejor */
+    margin-top: 0;
+    /* Elimina el margen superior innecesario */
+    transition: 0.3s;
+    text-align: center;
+    white-space: nowrap;
+
+}
+
+
+.navbar-brand {
+    display: flex;
+    align-items: center;
+    /* Alinea verticalmente la imagen */
+}
+
+.navbar-brand img {
+    padding-top: 1px;
+    width: 70px;
+    margin-left: 14px;
+}
+
+/* Ajusta el espaciado entre los elementos del navbar */
+.navbar-nav {
+    align-items: center;
+    /* Centra verticalmente los elementos en la navegación */
+}
+
+.navbar-nav .nav-link {
+    padding-right: 1rem;
+    /* Agrega espacio a la derecha de los enlaces */
+}
+
+.navbar-brand {
+    /* Selector más específico */
+    font-size: 14px !important;
+    /* Usar !important como último recurso */
+}
+
+
+
+.navBarMe p {
+    border-bottom: 3px solid rgba(173, 173, 173, 0);
+
+}
+.navBarMe:hover p {
+    border-bottom: 3px solid #CA2A31;
+    box-sizing: border-box;
+
+ }
+
+@media (max-width: 991px) {
+    .navBarMe {
+        border: none;
+        text-align: center;
+        margin: 5px !important;
+    }
+
+  }

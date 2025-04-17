@@ -1,0 +1,90 @@
+.Home {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+
+.Home h1 {
+    font-size: 15px;
+}
+
+
+
+
+
+.ToWhatsApp {
+    position: fixed;
+    bottom: 20px;
+    right: -65px;
+    z-index: 1000; /* Asegura que el botón esté encima de otros elementos */
+}
+
+.ToWhatsApp a img {
+    width: 60px;
+}
+
+.btn-wa {
+    position: relative;
+    bottom: 10px;
+    right: 90px;
+}
+
+a img {
+    width: 100px;
+}
+
+.btn-wa:before,
+.btn-wa:after {
+    content: "";
+    position: absolute;
+    top: -3px;
+    left: 16px;
+    width: 30px;
+    height: 30px;
+    opacity: 0;
+    background-color: #258d25;
+    border-radius: 50%;
+    animation: onda 1.7s infinite;
+}
+
+.btn-wa::before {
+    animation-delay: 1s;
+}
+
+.btn-wa::after {
+    animation-delay: 1.5s;
+}
+
+.btn-wa img {
+    position: relative;
+    z-index: 2;
+}
+
+@keyframes onda {
+    0% {
+        transform: scale(1);
+    }
+
+    15% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+        transform: scale(2.5);
+    }
+}
+
+
+/* Media Query para dispositivos móviles */
+@media (max-width: 768px) {
+    .promomdq {
+        height: 300px; /* Ajusta la altura para pantallas más pequeñas */
+        background-size: cover; /* Se sigue asegurando que cubra todo el contenedor */
+        border-radius: 5px;
+    }
+}
